@@ -3,7 +3,7 @@ import "./Hero.css"
 
 const Hero = () => {
   return (
-    <div>
+    <div className="hero-main">
       <div>
         <h1>We Build Digital <span>Experiences</span> That Matter</h1>
         <p>From idea to launch — we craft websites, apps, and brands that help startups and businesses grow in the digital world.</p>

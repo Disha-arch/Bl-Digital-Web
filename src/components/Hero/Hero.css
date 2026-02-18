@@ -1,0 +1,88 @@
+
+.hero-main {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background: linear-gradient(
+      rgba(2, 8, 23, 0.85),
+      rgba(2, 8, 23, 0.95)
+    ),
+    url("/hero-bg.jfif");
+
+  background-size: cover;
+  background-position: center;
+
+  color: white;
+  padding: 40px 20px;
+}
+
+
+
+.hero-main > div:first-child {
+  max-width: 900px;
+}
+
+
+
+.hero-main > div:first-child h1 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+
+
+.hero-main > div:first-child h1 span {
+  background: linear-gradient(90deg, #3b82f6, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+.hero-main > div:first-child p {
+  font-size: 18px;
+  color: #94a3b8;
+  margin-bottom: 30px;
+}
+
+
+
+.hero-main > div:first-child button {
+  background: linear-gradient(90deg, #3b82f6, #6366f1);
+  border: none;
+  padding: 12px 26px;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-main > div:first-child button:hover {
+  transform: translateY(-2px);
+}
+
+
+
+.hero-main > div:last-child {
+  display: flex;
+  gap: 80px;
+  margin-top: 80px;
+}
+
+
+
+.hero-main > div:last-child div h1 {
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+.hero-main > div:last-child div p {
+  color: #94a3b8;
+}
