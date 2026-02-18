@@ -10,8 +10,6 @@
 
 }
 
-
-/* Container box */
 .contact-container {
 
   background: linear-gradient(
@@ -34,18 +32,15 @@
 
 }
 
-
-/* Heading */
 .contact-container h2 {
 
   font-size: 42px;
 
   margin-bottom: 15px;
+  color: white;
 
 }
 
-
-/* Gradient word */
 .contact-container span {
 
   background: linear-gradient(90deg, #3b82f6, #6366f1);
@@ -56,8 +51,6 @@
 
 }
 
-
-/* Description */
 .contact-container p {
 
   color: #94a3b8;
@@ -68,8 +61,6 @@
 
 }
 
-
-/* Button container */
 .contact-buttons {
 
   display: flex;
@@ -80,8 +71,6 @@
 
 }
 
-
-/* Primary button */
 .contact-btn-primary {
 
   background: linear-gradient(90deg, #3b82f6, #6366f1);
@@ -102,16 +91,12 @@
 
 }
 
-
-/* Hover */
 .contact-btn-primary:hover {
 
   transform: translateY(-3px);
 
 }
 
-
-/* Secondary button */
 .contact-btn-secondary {
 
   background: transparent;
