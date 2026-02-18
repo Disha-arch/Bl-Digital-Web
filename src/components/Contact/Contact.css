@@ -1,0 +1,140 @@
+.contact {
+
+  background: #020817;
+
+  padding: 120px 20px;
+
+  display: flex;
+
+  justify-content: center;
+
+}
+
+
+/* Container box */
+.contact-container {
+
+  background: linear-gradient(
+    145deg,
+    rgba(15, 23, 42, 0.6),
+    rgba(2, 8, 23, 0.9)
+  );
+
+  border: 1px solid rgba(59, 130, 246, 0.2);
+
+  border-radius: 20px;
+
+  padding: 60px 40px;
+
+  text-align: center;
+
+  max-width: 800px;
+
+  width: 100%;
+
+}
+
+
+/* Heading */
+.contact-container h2 {
+
+  font-size: 42px;
+
+  margin-bottom: 15px;
+
+}
+
+
+/* Gradient word */
+.contact-container span {
+
+  background: linear-gradient(90deg, #3b82f6, #6366f1);
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+/* Description */
+.contact-container p {
+
+  color: #94a3b8;
+
+  margin-bottom: 30px;
+
+  font-size: 18px;
+
+}
+
+
+/* Button container */
+.contact-buttons {
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 20px;
+
+}
+
+
+/* Primary button */
+.contact-btn-primary {
+
+  background: linear-gradient(90deg, #3b82f6, #6366f1);
+
+  border: none;
+
+  padding: 14px 28px;
+
+  border-radius: 10px;
+
+  color: white;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+}
+
+
+/* Hover */
+.contact-btn-primary:hover {
+
+  transform: translateY(-3px);
+
+}
+
+
+/* Secondary button */
+.contact-btn-secondary {
+
+  background: transparent;
+
+  border: 1px solid rgba(59, 130, 246, 0.3);
+
+  padding: 14px 28px;
+
+  border-radius: 10px;
+
+  color: white;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+}
+
+
+.contact-btn-secondary:hover {
+
+  background: rgba(59, 130, 246, 0.1);
+
+}
