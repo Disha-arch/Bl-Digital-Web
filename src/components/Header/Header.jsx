@@ -21,7 +21,11 @@ const Header = () => {
             behavior:"smooth"
           });
         }}>Process</p>
-        <p>Contact</p>
+        <p onClick={()=>{
+          document.getElementById("contact").scrollIntoView({
+            behavior:"smooth"
+          });
+        }}>Contact</p>
         <button>Get Started</button>
       </div>
     </div>
