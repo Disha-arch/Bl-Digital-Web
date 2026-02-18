@@ -1,0 +1,57 @@
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 60px;
+  background-color: #020817;
+  color: white;
+}
+
+
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.logo span {
+  color: white;
+}
+
+.logo {
+  color: #3b82f6;
+}
+
+
+.header-second {
+  display: flex;              
+  flex-direction: row;        
+  align-items: center;
+  gap: 30px;                 
+}
+
+
+.header-second p {
+  margin: 0;
+  font-size: 15px;
+  color: #cbd5e1;
+  cursor: pointer;
+}
+
+.header-second p:hover {
+  color: white;
+}
+
+
+.header-second button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.header-second button:hover {
+  background-color: #2563eb;
+}
