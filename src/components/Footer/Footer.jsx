@@ -1,6 +1,7 @@
 import React from "react";
 import { MdEmail } from "react-icons/md";
 import { FaPhone, FaLocationDot } from "react-icons/fa6";
+import logo from "../../assets/logo.jpeg";   
 import "./Footer.css";
 
 const Footer = () => {
@@ -8,10 +9,10 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
 
-        {/* Brand Column */}
+        
         <div className="footer-brand">
           <div className="footer-logo">
-            <div className="footer-logo-box"></div>
+            <img src={logo} alt="BL Digital Solutions" className="footer-logo-img" />
             <span>BL <strong>Digital</strong> Solutions</span>
           </div>
           <p className="footer-description">
@@ -20,7 +21,7 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Services */}
+        
         <div className="footer-col">
           <h3>Services</h3>
           <ul>
@@ -33,7 +34,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Company */}
+        
         <div className="footer-col">
           <h3>Company</h3>
           <ul>
@@ -44,7 +45,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Contact */}
+        
         <div className="footer-col">
           <h3>Contact</h3>
           <ul className="footer-contact-list">

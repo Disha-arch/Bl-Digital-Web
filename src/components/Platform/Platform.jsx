@@ -54,47 +54,34 @@ const Platform = () => {
     }
   ];
 
-
   return (
     <section id="platform" className="platform">
 
-      
       <div className="platform-top">
-
         <p className="platform-tag">PLATFORMS WE WORK ON</p>
-
         <h2>Where We <span>Deliver Results</span></h2>
-
         <p className="platform-desc">
           We operate across the platforms that matter most for modern Indian D2C and e-commerce brands.
         </p>
-
       </div>
 
-
-      
       <div className="platform-grid">
-
         {servicesData.map((platform) => (
-
           <div className="platform-card" key={platform.id}>
 
+            
             <div className="icon">
               {platform.icon}
             </div>
 
-            <h3>
-              {platform.title}
-            </h3>
-
-            <p>
-              {platform.description}
-            </p>
+            
+            <div className="platform-card-body">
+              <h3>{platform.title}</h3>
+              <p>{platform.description}</p>
+            </div>
 
           </div>
-
         ))}
-
       </div>
 
     </section>

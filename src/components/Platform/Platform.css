@@ -1,4 +1,4 @@
-/* ===== ANIMATIONS ===== */
+
 @keyframes fadeSlideUp {
   from {
     opacity: 0;
@@ -16,19 +16,14 @@
   100% { transform: rotate(0deg) scale(1); }
 }
 
-@keyframes glowPulse {
-  0%, 100% { box-shadow: 0 0 0px rgba(74, 144, 226, 0); }
-  50% { box-shadow: 0 0 20px rgba(74, 144, 226, 0.3); }
-}
 
-/* ===== SECTION ===== */
 .platform {
   background-color: #060d1f;
   padding: 80px 60px;
   text-align: center;
 }
 
-/* ===== TOP HEADER ===== */
+
 .platform-top {
   max-width: 700px;
   margin: 0 auto 60px auto;
@@ -53,7 +48,6 @@
   line-height: 1.2;
 }
 
-/* blue highlight on "Deliver Results" — wrap it in a span in JSX */
 .platform-top h2 span {
   color: #4a90e2;
 }
@@ -65,7 +59,7 @@
   margin: 0;
 }
 
-/* ===== GRID ===== */
+
 .platform-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -74,7 +68,7 @@
   margin: 0 auto;
 }
 
-/* ===== CARD ===== */
+
 .platform-card {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -88,13 +82,14 @@
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease,
-              border-color 0.3s ease, background 0.3s ease;
-  animation: fadeSlideUp 0.6s ease forwards;
-  opacity: 0;
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease,
+              border-color 0.3s ease,
+              background 0.3s ease;
+  animation: fadeSlideUp 0.6s ease both;
 }
 
-/* staggered load */
+
 .platform-card:nth-child(1) { animation-delay: 0.1s; }
 .platform-card:nth-child(2) { animation-delay: 0.2s; }
 .platform-card:nth-child(3) { animation-delay: 0.3s; }
@@ -102,7 +97,7 @@
 .platform-card:nth-child(5) { animation-delay: 0.5s; }
 .platform-card:nth-child(6) { animation-delay: 0.6s; }
 
-/* shine sweep */
+
 .platform-card::before {
   content: '';
   position: absolute;
@@ -123,7 +118,7 @@
   left: 150%;
 }
 
-/* top blue glow line */
+
 .platform-card::after {
   content: '';
   position: absolute;
@@ -142,15 +137,16 @@
 
 .platform-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 40px rgba(74, 144, 226, 0.15);
+  box-shadow: 0 12px 40px rgba(74, 144, 226, 0.15),
+              0 0 20px rgba(74, 144, 226, 0.12);
   border-color: rgba(74, 144, 226, 0.3);
   background: rgba(74, 144, 226, 0.05);
-  animation: glowPulse 2s ease-in-out infinite;
 }
 
-/* ===== ICON ===== */
+
 .platform-card .icon {
   min-width: 52px;
+  width: 52px;
   height: 52px;
   background: rgba(74, 144, 226, 0.1);
   border-radius: 12px;
@@ -169,8 +165,15 @@
   color: #74b3f5;
 }
 
-/* ===== TEXT ===== */
-.platform-card h3 {
+
+.platform-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.platform-card-body h3 {
   font-size: 17px;
   font-weight: 700;
   color: #ffffff;
@@ -178,24 +181,18 @@
   transition: color 0.3s ease;
 }
 
-.platform-card:hover h3 {
+.platform-card:hover .platform-card-body h3 {
   color: #74b3f5;
 }
 
-.platform-card p {
+.platform-card-body p {
   font-size: 14px;
   color: #8899bb;
   line-height: 1.7;
   margin: 0;
 }
 
-/* wrap icon + text together */
-.platform-card-body {
-  display: flex;
-  flex-direction: column;
-}
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
   .platform {
     padding: 70px 40px;
@@ -221,14 +218,23 @@
   }
 
   .platform-card {
-    padding: 24px 18px;
+    padding: 20px 16px;
     gap: 14px;
   }
 
   .platform-card .icon {
     min-width: 44px;
+    width: 44px;
     height: 44px;
     font-size: 20px;
+  }
+
+  .platform-card-body h3 {
+    font-size: 15px;
+  }
+
+  .platform-card-body p {
+    font-size: 13px;
   }
 }
 
@@ -239,6 +245,7 @@
 
   .platform-grid {
     grid-template-columns: 1fr;
+    gap: 14px;
   }
 
   .platform-top h2 {
@@ -252,5 +259,24 @@
   .platform-card {
     flex-direction: row;
     align-items: flex-start;
+    padding: 20px 18px;
+    gap: 16px;
+  }
+
+  .platform-card .icon {
+    min-width: 46px;
+    width: 46px;
+    height: 46px;
+    font-size: 21px;
+  }
+
+  .platform-card-body h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .platform-card-body p {
+    font-size: 13.5px;
+    line-height: 1.65;
   }
 }

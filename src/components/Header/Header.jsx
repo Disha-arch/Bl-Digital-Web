@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { MdEmail } from "react-icons/md"
 import { FaPhone } from "react-icons/fa6"
 import { IoClose } from "react-icons/io5"
+import logo from "../../assets/logo.jpeg"   
 import "./Header.css"
 
 const Header = () => {
@@ -12,7 +13,7 @@ const Header = () => {
     <>
       <div className='header-main'>
         <div className="logo">
-          <div className="logo-box"></div>
+          <img src={logo} alt="BL Digital Solutions" className="logo-img" />
           <div className="logo-text">
             <div className="logo-title">BL <span>Digital</span> Solutions</div>
             <div className="logo-subtitle">DIGITAL MARKETING AGENCY</div>
@@ -34,7 +35,7 @@ const Header = () => {
         </div>
       </div>
 
-      {/* POPUP MODAL */}
+      
       {popupOpen && (
         <div className="popup-overlay" onClick={() => setPopupOpen(false)}>
           <div className="popup-box" onClick={(e) => e.stopPropagation()}>

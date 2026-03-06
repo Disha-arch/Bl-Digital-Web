@@ -9,7 +9,7 @@
 }
 
 
-/* container layout */
+
 .about-container {
 
   display: flex;
@@ -23,7 +23,7 @@
 }
 
 
-/* LEFT SIDE */
+
 .about-left {
 
   flex: 1;
@@ -31,7 +31,7 @@
 }
 
 
-/* tag */
+
 .about-tag {
 
   color: #3b82f6;
@@ -45,7 +45,7 @@
 }
 
 
-/* heading */
+
 .about-left h2 {
 
   font-size: 42px;
@@ -57,7 +57,7 @@
 }
 
 
-/* gradient text */
+
 .about-left h2 span {
 
   background: linear-gradient(90deg, #3b82f6, #6366f1);
@@ -69,7 +69,7 @@
 }
 
 
-/* description */
+
 .about-desc {
 
   color: #94a3b8;
