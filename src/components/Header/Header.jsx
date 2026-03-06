@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { MdEmail } from "react-icons/md"
 import { FaPhone } from "react-icons/fa6"
 import { IoClose } from "react-icons/io5"
-import logo from "../../assets/logo.jpeg"   
+import logo from "../../assets/logo.png"   
 import "./Header.css"
 
 const Header = () => {
@@ -53,7 +53,7 @@ const Header = () => {
                 <div className="popup-option-icon"><MdEmail /></div>
                 <div className="popup-option-text">
                   <span className="popup-option-label">Send us an Email</span>
-                  <span className="popup-option-value">hello@bldigital.com</span>
+                  <span className="popup-option-value">bldigitalsolution@gmail.com</span>
                 </div>
               </a>
 

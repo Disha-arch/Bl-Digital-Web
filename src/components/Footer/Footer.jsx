@@ -1,7 +1,7 @@
 import React from "react";
 import { MdEmail } from "react-icons/md";
 import { FaPhone, FaLocationDot } from "react-icons/fa6";
-import logo from "../../assets/logo.jpeg";   
+import logo from "../../assets/logo.png";   
 import "./Footer.css";
 
 const Footer = () => {
@@ -51,16 +51,13 @@ const Footer = () => {
           <ul className="footer-contact-list">
             <li>
               <span className="footer-contact-icon email"><MdEmail /></span>
-              <a href="mailto:hello@bldigital.com">hello@bldigital.com</a>
+              <a href="mailto:hello@bldigital.com">bldigitalsolution@gmail.com</a>
             </li>
             <li>
               <span className="footer-contact-icon phone"><FaPhone /></span>
               <span>+91 92665 19979</span>
             </li>
-            <li>
-              <span className="footer-contact-icon location"><FaLocationDot /></span>
-              <span>Remote</span>
-            </li>
+            
           </ul>
         </div>
 
