@@ -1,4 +1,10 @@
 import React from "react";
+import { TbDeviceMobileMessage } from "react-icons/tb";
+import { TbTargetArrow } from "react-icons/tb";
+import { FaCartShopping } from "react-icons/fa6";
+import { FaBolt } from "react-icons/fa6";
+import { RiComputerFill } from "react-icons/ri";
+import { TfiShine } from "react-icons/tfi";
 import "./Services.css";
 
 const Services = () => {
@@ -6,45 +12,45 @@ const Services = () => {
   const servicesData = [
     {
       id: 1,
-      icon: "🌐",
-      title: "Web Development",
+      icon: <TbDeviceMobileMessage />,
+      title: "Social Media Management",
       description:
-        "High-performance websites and web apps built with modern frameworks for speed and scalability."
+        "Strategic content planning, brand-aligned creatives, reels, stories, and captions — crafted to build community, drive engagement, and convert followers into customers."
     },
     {
       id: 2,
-      icon: "📱",
-      title: "Mobile App Development",
+      icon: <TbTargetArrow />,
+      title: "Meta & Instagram Ads",
       description:
-        "Native and cross-platform mobile applications that deliver seamless user experiences."
+        "Performance-driven paid campaigns on Meta platforms — from creative ideation and audience targeting to A/B testing and budget optimization for maximum ROAS."
     },
     {
       id: 3,
-      icon: "🎨",
-      title: "UI/UX Design",
+      icon: <FaCartShopping />,
+      title: "Amazon Product Listing",
       description:
-        "Research-driven design systems and interfaces that delight users and drive conversions."
+        "Keyword-rich titles, bullet points, and A+ content that improve search ranking and conversion rate on Amazon — fully compliant with platform guidelines."
     },
     {
       id: 4,
-      icon: "📢",
-      title: "Digital Marketing",
+      icon: <FaBolt />,
+      title: "Quick Commerce — Blinkit",
       description:
-        "Data-driven marketing strategies that boost your online presence and growth."
+        "End-to-end Blinkit listing management — keyword research, optimized product titles, image audits, and discoverability strategies for the 10-minute delivery ecosystem."
     },
     {
       id: 5,
-      icon: "🔍",
-      title: "SEO Optimization",
+      icon: <RiComputerFill />,
+      title: "Website Design & Development",
       description:
-        "Improve search rankings and increase organic traffic to your website."
+        "Modern, conversion-focused websites built with clean code and compelling design — from landing pages to full business websites that represent your brand with credibility."
     },
     {
       id: 6,
-      icon: "🚀",
-      title: "Branding Solutions",
+      icon: <TfiShine />,
+      title: "Brand Identity & Design",
       description:
-        "Create a powerful and memorable brand identity for your business."
+        "Logos, brand guidelines, visual systems, and creative assets that establish a cohesive identity across every digital touchpoint — built to be remembered."
     }
   ];
 
@@ -60,7 +66,7 @@ const Services = () => {
         <h2>Services That Drive Results</h2>
 
         <p className="services-desc">
-          End-to-end digital solutions tailored for startups and growing businesses.
+          End-to-end digital solutions tailored for D2C brands, startups, and growing businesses across India.
         </p>
 
       </div>

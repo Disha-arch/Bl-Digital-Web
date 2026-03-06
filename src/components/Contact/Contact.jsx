@@ -14,7 +14,7 @@ const Contact = () => {
 
         
         <p>
-          Let's discuss your project. Get a free consultation and quote
+          Let's discuss your project. Get a free consultation and a custom quote
           within 24 hours.
         </p>
 
@@ -25,7 +25,11 @@ const Contact = () => {
             Get in Touch →
           </button>
 
-          <button className="contact-btn-secondary">
+          <button className="contact-btn-secondary" onClick={()=>{
+            document.getElementById("services").scrollIntoView({
+              behavior:"smooth"
+            })
+          }}>
             View Services
           </button>
 

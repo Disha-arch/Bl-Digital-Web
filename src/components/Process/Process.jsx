@@ -8,25 +8,25 @@ const Process = () => {
       number: "01",
       title: "Discovery",
       description:
-        "We learn about your business, goals, and target audience to define the project scope."
+        "We start by understanding your brand, goals, target audience, and current digital presence — so everything we build is rooted in strategy, not guesswork."
     },
     {
       number: "02",
-      title: "Design",
+      title: "Strategy & Planning",
       description:
-        "Our designers create wireframes and high-fidelity mockups aligned with your brand."
+        "We develop a tailored execution plan — content calendars, ad strategies, listing roadmaps — with clear timelines, deliverables, and approval checkpoints."
     },
     {
       number: "03",
-      title: "Development",
+      title: "Execution",
       description:
-        "We build your product using cutting-edge technologies with clean, scalable code."
+        "Our team gets to work — designing creatives, writing copy, optimizing listings, and launching campaigns — with week-by-week updates so you're always in the loop."
     },
     {
       number: "04",
-      title: "Launch & Support",
+      title: "Review & Scale",
       description:
-        "We deploy, optimize, and provide ongoing maintenance to keep things running smoothly."
+        "We track performance, share monthly reports, and refine what works — turning insights into actions that compound your growth over time."
     }
   ];
 
@@ -44,6 +44,8 @@ const Process = () => {
         <h2>
           How We Work
         </h2>
+
+        <p className="process-desc">A structured, transparent process that keeps you informed and your brand moving forward — every week.</p>
 
       </div>
 

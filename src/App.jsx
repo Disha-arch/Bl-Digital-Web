@@ -6,6 +6,7 @@ import Services from './components/Services/Services'
 import About from './components/About/About'
 import Process from './components/Process/Process'
 import Contact from './components/Contact/Contact'
+import Platform from './components/Platform/Platform'
 
 const App = () => {
 
@@ -15,6 +16,7 @@ const App = () => {
       <Hero />
       <Services />
       <About />
+      <Platform />
       <Process />
       <Contact/>
       <Footer />

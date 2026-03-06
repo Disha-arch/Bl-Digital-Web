@@ -4,22 +4,22 @@ import "./About.css";
 const About = () => {
 
   const features = [
-    "Startup-focused approach with agile delivery",
-    "Transparent pricing, no hidden costs",
-    "Dedicated project manager for every engagement",
-    "Modern tech stack — React, Next.js, Flutter & more",
-    "Post-launch support and maintenance",
-    "Proven track record with 50+ projects"
+    "Startup-focused approach with agile, week-by-week delivery",
+    "Transparent pricing with no hidden costs — ever",
+    "Dedicated account manager for every client engagement",
+    "Specialized in D2C, e-commerce, and quick commerce brands",
+    "Platform-compliant work across Amazon, Blinkit, and Meta",
+    "Post-launch support and ongoing brand consultancy"
   ];
 
   const stats = [
     {
-      number: "3+",
-      label: "Years Experience"
+      number: "30+",
+      label: "Projects Completed"
     },
     {
-      number: "50+",
-      label: "Projects Completed"
+      number: "10+",
+      label: "Brands Served"
     },
     {
       number: "15+",
@@ -45,13 +45,12 @@ const About = () => {
           </p>
 
           <h2>
-            Built for Startups, <span>Trusted by Businesses</span>
+            Built for Startups, 
+            <span>Trusted by Businesses</span>
           </h2>
 
           <p className="about-desc">
-            At BL Digital Solutions, we combine creative thinking with
-            technical expertise to deliver digital products that stand out.
-            Our team is passionate about helping businesses scale through technology.
+            At BL Digital Solutions, we combine creative thinking with technical expertise to deliver digital products that stand out. Led by Lakshay Gupta and Bhavya Chauhan, our team is passionate about helping brands scale through smart strategy and sharp execution.
           </p>
 
 
