@@ -1,6 +1,7 @@
 import React from "react";
 import { MdEmail } from "react-icons/md";
 import { FaPhone, FaLocationDot } from "react-icons/fa6"; 
+import { FaInstagram } from "react-icons/fa";
 import "./Footer.css";
 
 const Footer = () => {
@@ -37,8 +38,8 @@ const Footer = () => {
         <div className="footer-col">
           <h3>Company</h3>
           <ul>
-            <li>About Us</li>
-            <li>Our Process</li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#process">Our Process</a></li>
             <li>Case Studies</li>
             <li>Blog</li>
           </ul>
@@ -55,6 +56,10 @@ const Footer = () => {
             <li>
               <span className="footer-contact-icon phone"><FaPhone /></span>
               <span>+91 92665 19979</span>
+            </li>
+            <li>
+              <span className="footer-contact-icon phone"><FaInstagram /></span>
+              <a href="https://www.instagram.com/bldigitalco?igsh=Y3h6NTI5ZTYycjFr&utm_source=qr">bldigitalco</a>
             </li>
             
           </ul>

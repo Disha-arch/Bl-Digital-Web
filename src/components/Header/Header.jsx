@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import { MdEmail } from "react-icons/md"
 import { FaPhone } from "react-icons/fa6"
-import { IoClose } from "react-icons/io5"
-import logo from "../../../public/logo.png";  
+import { IoClose } from "react-icons/io5" 
 import "./Header.css"
 
 const Header = () => {
