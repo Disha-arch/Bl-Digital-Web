@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { MdEmail } from "react-icons/md"
 import { FaPhone } from "react-icons/fa6"
 import { IoClose } from "react-icons/io5"
-import logo from "../../assets/logo.png"   
+import logo from "../../../public/logo.png";  
 import "./Header.css"
 
 const Header = () => {
@@ -13,7 +13,7 @@ const Header = () => {
     <>
       <div className='header-main'>
         <div className="logo">
-          <img src={logo} alt="BL Digital Solutions" className="logo-img" />
+          <img src="/logo.png" alt="BL Digital Solutions" className="logo-img" />
           <div className="logo-text">
             <div className="logo-title">BL <span>Digital</span> Solutions</div>
             <div className="logo-subtitle">DIGITAL MARKETING AGENCY</div>
